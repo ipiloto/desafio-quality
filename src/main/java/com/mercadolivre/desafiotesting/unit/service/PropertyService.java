@@ -1,4 +1,4 @@
-package com.mercadolivre.desafiotesting.service;
+package com.mercadolivre.desafiotesting.unit.service;
 
 import com.mercadolivre.desafiotesting.entity.District;
 import com.mercadolivre.desafiotesting.entity.Property;
@@ -18,15 +18,18 @@ import static com.mercadolivre.desafiotesting.repository.Repository.*;
 public class PropertyService {
 
     public void newProperty(Property propertyDTO) {
-        if(DISTRICT_REPO.get(propertyDTO.getProp_district()) == null) throw new DistrictNotFoundException();
+        validateDistrict(propertyDTO.getProp_district());
         propertyRepo.add(propertyDTO);
+    }
+
+    public void validateDistrict(String districtName) {
+        if(DISTRICT_REPO.get(districtName) == null) throw new DistrictNotFoundException();
     }
 
     public Double totalSquareMeters(String propertyName) {
         Property property = findPropertyByName(propertyName);
         return property.getRooms().stream().mapToDouble(Room::getSquareMeters).sum();
     }
-
 
     public Double propertyValue(String propertyName) {
         Property property = findPropertyByName(propertyName);

@@ -33,8 +33,4 @@ public class Property {
         return Objects.equals(prop_name, that.prop_name);
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(prop_name);
-    }
 }
