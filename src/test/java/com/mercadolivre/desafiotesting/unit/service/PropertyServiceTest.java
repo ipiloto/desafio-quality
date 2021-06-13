@@ -5,6 +5,7 @@ import com.mercadolivre.desafiotesting.entity.Room;
 import com.mercadolivre.desafiotesting.exception.DistrictNotFoundException;
 import com.mercadolivre.desafiotesting.repository.Repository;
 import com.mercadolivre.desafiotesting.service.PropertyService;
+import com.mercadolivre.desafiotesting.util.PropertyCreator;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
@@ -12,7 +13,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
-import com.mercadolivre.desafiotesting.util.PropertyCreator;
 
 import java.util.List;
 

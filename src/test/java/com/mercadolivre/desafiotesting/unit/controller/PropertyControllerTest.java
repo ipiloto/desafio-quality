@@ -4,6 +4,7 @@ import com.mercadolivre.desafiotesting.controller.PropertyController;
 import com.mercadolivre.desafiotesting.dto.RoomListDTO;
 import com.mercadolivre.desafiotesting.entity.Room;
 import com.mercadolivre.desafiotesting.service.PropertyService;
+import com.mercadolivre.desafiotesting.util.PropertyCreator;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -16,9 +17,6 @@ import org.mockito.Mock;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
-import com.mercadolivre.desafiotesting.util.PropertyCreator;
-
-import java.util.List;
 
 @ExtendWith(SpringExtension.class)
 class PropertyControllerTest {

@@ -9,10 +9,10 @@ import com.mercadolivre.desafiotesting.exception.PropertyNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.Comparator;
-import java.util.List;
 import java.util.NoSuchElementException;
 
-import static com.mercadolivre.desafiotesting.repository.Repository.*;
+import static com.mercadolivre.desafiotesting.repository.Repository.DISTRICT_REPO;
+import static com.mercadolivre.desafiotesting.repository.Repository.propertyRepo;
 
 
 @Service
