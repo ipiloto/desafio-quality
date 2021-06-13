@@ -1,8 +1,9 @@
-package com.mercadolivre.desafiotesting.unit.controller;
+package com.mercadolivre.desafiotesting.controller;
 
+import com.mercadolivre.desafiotesting.dto.RoomListDTO;
 import com.mercadolivre.desafiotesting.entity.Property;
 import com.mercadolivre.desafiotesting.entity.Room;
-import com.mercadolivre.desafiotesting.unit.service.PropertyService;
+import com.mercadolivre.desafiotesting.service.PropertyService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -44,7 +45,7 @@ public class PropertyController {
 
     @GetMapping
     @RequestMapping("{propertyName}/rooms")
-    public ResponseEntity<List<Room>> rooms(@PathVariable String propertyName){
+    public ResponseEntity<RoomListDTO> rooms(@PathVariable String propertyName){
         return new ResponseEntity<>(propertyService.getPropertyRoomsWithSquareMeters(propertyName), HttpStatus.OK);
     }
 

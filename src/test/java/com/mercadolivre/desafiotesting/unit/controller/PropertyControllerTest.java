@@ -1,7 +1,9 @@
 package com.mercadolivre.desafiotesting.unit.controller;
 
+import com.mercadolivre.desafiotesting.controller.PropertyController;
+import com.mercadolivre.desafiotesting.dto.RoomListDTO;
 import com.mercadolivre.desafiotesting.entity.Room;
-import com.mercadolivre.desafiotesting.unit.service.PropertyService;
+import com.mercadolivre.desafiotesting.service.PropertyService;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -39,13 +41,13 @@ class PropertyControllerTest {
                 .thenReturn(837.0);
 
         BDDMockito.when(propertyServiceMock.propertyValue(ArgumentMatchers.any()))
-                .thenReturn(3348000.0);
+                .thenReturn(4185000.0);
 
         BDDMockito.when(propertyServiceMock.greatestRoom(ArgumentMatchers.any()))
                 .thenReturn(PropertyCreator.createGreatestRoom());
 
         BDDMockito.when(propertyServiceMock.getPropertyRoomsWithSquareMeters(ArgumentMatchers.any()))
-                .thenReturn(PropertyCreator.createRooms());
+                .thenReturn(new RoomListDTO(PropertyCreator.createRooms()));
     }
 
     @Test
@@ -75,7 +77,7 @@ class PropertyControllerTest {
     void propertyValue_ReturnThePropertyValue_WhenSuccessful() {
         ResponseEntity<Double> entity = propertyController.propertyValue("Casa Azul");
 
-        Assertions.assertThat(entity.getBody()).isEqualTo(3348000.0);
+        Assertions.assertThat(entity.getBody()).isEqualTo(4185000.0);
         Assertions.assertThat(entity.getStatusCode()).isEqualTo(HttpStatus.OK);
     }
 
@@ -93,9 +95,11 @@ class PropertyControllerTest {
     @Test
     @DisplayName("Return the Property's rooms when successful")
     void rooms_ReturnThePropertyRooms_WhenSuccessful() {
-        ResponseEntity<List<Room>> entity = propertyController.rooms("Casa Azul");
+        ResponseEntity<RoomListDTO> entity = propertyController.rooms("Casa Azul");
 
-        Assertions.assertThat(entity.getBody()).isNotNull()
+        Assertions.assertThat(entity.getBody()).isNotNull();
+
+        Assertions.assertThat(entity.getBody().getRooms()).isNotNull()
                 .isNotEmpty()
                 .containsAll(PropertyCreator.createRooms());
 

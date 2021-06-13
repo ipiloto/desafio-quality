@@ -1,5 +1,6 @@
-package com.mercadolivre.desafiotesting.unit.service;
+package com.mercadolivre.desafiotesting.service;
 
+import com.mercadolivre.desafiotesting.dto.RoomListDTO;
 import com.mercadolivre.desafiotesting.entity.District;
 import com.mercadolivre.desafiotesting.entity.Property;
 import com.mercadolivre.desafiotesting.entity.Room;
@@ -49,7 +50,7 @@ public class PropertyService {
         return property.getRooms().stream().max(Comparator.comparing(Room::getSquareMeters)).orElseThrow(NoSuchElementException::new);
     }
 
-    public List<Room> getPropertyRoomsWithSquareMeters(String propertyName){
-        return findPropertyByName(propertyName).getRooms();
+    public RoomListDTO getPropertyRoomsWithSquareMeters(String propertyName){
+        return new RoomListDTO(findPropertyByName(propertyName).getRooms());
     }
 }

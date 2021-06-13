@@ -4,6 +4,7 @@ import com.mercadolivre.desafiotesting.entity.Property;
 import com.mercadolivre.desafiotesting.entity.Room;
 import com.mercadolivre.desafiotesting.exception.DistrictNotFoundException;
 import com.mercadolivre.desafiotesting.repository.Repository;
+import com.mercadolivre.desafiotesting.service.PropertyService;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
@@ -101,7 +102,7 @@ class PropertyServiceTest {
     void rooms_ReturnThePropertyRooms_WhenSuccessful() {
         Property property = PropertyCreator.createValidProperty();
 
-        List<Room> rooms = propertyService.getPropertyRoomsWithSquareMeters(property.getProp_name());
+        List<Room> rooms = propertyService.getPropertyRoomsWithSquareMeters(property.getProp_name()).getRooms();
 
         Assertions.assertThat(rooms).isNotNull()
                 .isNotEmpty()
@@ -114,7 +115,7 @@ class PropertyServiceTest {
     void totalSquareMeters_ReturnTheRoomTotalSquareMeter_WhenSuccessful(){
         Property property = PropertyCreator.createValidProperty();
 
-        List<Room> rooms = propertyService.getPropertyRoomsWithSquareMeters(property.getProp_name());
+        List<Room> rooms = propertyService.getPropertyRoomsWithSquareMeters(property.getProp_name()).getRooms();
 
         Room room = rooms.get(rooms.indexOf(PropertyCreator.createGreatestRoom()));
 
