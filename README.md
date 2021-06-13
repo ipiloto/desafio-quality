@@ -1,4 +1,4 @@
-# Desafio Testing: Bootcamp Mercado Livre
+Desafio Quality: Bootcamp Mercado Livre
 
 Essa aplicação tem como objetivo colocar em prática os conceitos estudados
 no quesito de qualidade de software e testes.
