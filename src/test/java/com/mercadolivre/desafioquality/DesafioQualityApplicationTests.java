@@ -1,10 +1,10 @@
-package com.mercadolivre.desafiotesting;
+package com.mercadolivre.desafioquality;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DesafioTestingApplicationTests {
+class DesafioQualityApplicationTests {
 
 	@Test
 	void contextLoads() {

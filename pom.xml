@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mercadolivre</groupId>
-	<artifactId>desafio-testing</artifactId>
+	<artifactId>desafio-quality</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>desafio-testing</name>
-	<description>Desafio Testing Bootcamp Mercado Livre</description>
+	<name>desafio-quality</name>
+	<description>Desafio Quality Bootcamp Mercado Livre</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>

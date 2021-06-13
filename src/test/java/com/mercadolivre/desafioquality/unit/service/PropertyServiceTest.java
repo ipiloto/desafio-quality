@@ -1,11 +1,11 @@
-package com.mercadolivre.desafiotesting.unit.service;
+package com.mercadolivre.desafioquality.unit.service;
 
-import com.mercadolivre.desafiotesting.entity.Property;
-import com.mercadolivre.desafiotesting.entity.Room;
-import com.mercadolivre.desafiotesting.exception.DistrictNotFoundException;
-import com.mercadolivre.desafiotesting.repository.Repository;
-import com.mercadolivre.desafiotesting.service.PropertyService;
-import com.mercadolivre.desafiotesting.util.PropertyCreator;
+import com.mercadolivre.desafioquality.entity.Property;
+import com.mercadolivre.desafioquality.entity.Room;
+import com.mercadolivre.desafioquality.exception.DistrictNotFoundException;
+import com.mercadolivre.desafioquality.repository.Repository;
+import com.mercadolivre.desafioquality.service.PropertyService;
+import com.mercadolivre.desafioquality.util.PropertyCreator;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;

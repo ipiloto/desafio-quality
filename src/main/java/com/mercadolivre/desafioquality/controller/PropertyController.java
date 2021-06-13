@@ -1,9 +1,9 @@
-package com.mercadolivre.desafiotesting.controller;
+package com.mercadolivre.desafioquality.controller;
 
-import com.mercadolivre.desafiotesting.dto.RoomListDTO;
-import com.mercadolivre.desafiotesting.entity.Property;
-import com.mercadolivre.desafiotesting.entity.Room;
-import com.mercadolivre.desafiotesting.service.PropertyService;
+import com.mercadolivre.desafioquality.dto.RoomListDTO;
+import com.mercadolivre.desafioquality.entity.Property;
+import com.mercadolivre.desafioquality.entity.Room;
+import com.mercadolivre.desafioquality.service.PropertyService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

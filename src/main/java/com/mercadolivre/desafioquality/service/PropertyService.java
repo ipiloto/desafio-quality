@@ -1,18 +1,18 @@
-package com.mercadolivre.desafiotesting.service;
+package com.mercadolivre.desafioquality.service;
 
-import com.mercadolivre.desafiotesting.dto.RoomListDTO;
-import com.mercadolivre.desafiotesting.entity.District;
-import com.mercadolivre.desafiotesting.entity.Property;
-import com.mercadolivre.desafiotesting.entity.Room;
-import com.mercadolivre.desafiotesting.exception.DistrictNotFoundException;
-import com.mercadolivre.desafiotesting.exception.PropertyNotFoundException;
+import com.mercadolivre.desafioquality.dto.RoomListDTO;
+import com.mercadolivre.desafioquality.entity.District;
+import com.mercadolivre.desafioquality.entity.Property;
+import com.mercadolivre.desafioquality.entity.Room;
+import com.mercadolivre.desafioquality.exception.DistrictNotFoundException;
+import com.mercadolivre.desafioquality.exception.PropertyNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.Comparator;
 import java.util.NoSuchElementException;
 
-import static com.mercadolivre.desafiotesting.repository.Repository.DISTRICT_REPO;
-import static com.mercadolivre.desafiotesting.repository.Repository.propertyRepo;
+import static com.mercadolivre.desafioquality.repository.Repository.DISTRICT_REPO;
+import static com.mercadolivre.desafioquality.repository.Repository.propertyRepo;
 
 
 @Service

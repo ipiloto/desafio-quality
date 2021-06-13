@@ -1,4 +1,4 @@
-package com.mercadolivre.desafiotesting.exception;
+package com.mercadolivre.desafioquality.exception;
 
 public class DistrictNotFoundException extends NotFoundException {
 }

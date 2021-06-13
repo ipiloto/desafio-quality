@@ -1,4 +1,4 @@
-package com.mercadolivre.desafiotesting.entity;
+package com.mercadolivre.desafioquality.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

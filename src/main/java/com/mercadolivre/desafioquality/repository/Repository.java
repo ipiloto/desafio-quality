@@ -1,7 +1,7 @@
-package com.mercadolivre.desafiotesting.repository;
+package com.mercadolivre.desafioquality.repository;
 
-import com.mercadolivre.desafiotesting.entity.District;
-import com.mercadolivre.desafiotesting.entity.Property;
+import com.mercadolivre.desafioquality.entity.District;
+import com.mercadolivre.desafioquality.entity.Property;
 
 import java.util.ArrayList;
 import java.util.List;

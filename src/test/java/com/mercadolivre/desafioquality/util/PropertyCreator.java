@@ -1,7 +1,7 @@
-package com.mercadolivre.desafiotesting.util;
+package com.mercadolivre.desafioquality.util;
 
-import com.mercadolivre.desafiotesting.entity.Property;
-import com.mercadolivre.desafiotesting.entity.Room;
+import com.mercadolivre.desafioquality.entity.Property;
+import com.mercadolivre.desafioquality.entity.Room;
 
 import java.util.ArrayList;
 import java.util.List;

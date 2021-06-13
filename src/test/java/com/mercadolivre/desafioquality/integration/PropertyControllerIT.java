@@ -1,9 +1,9 @@
-package com.mercadolivre.desafiotesting.integration;
+package com.mercadolivre.desafioquality.integration;
 
-import com.mercadolivre.desafiotesting.dto.RoomListDTO;
-import com.mercadolivre.desafiotesting.entity.Room;
-import com.mercadolivre.desafiotesting.service.PropertyService;
-import com.mercadolivre.desafiotesting.util.PropertyCreator;
+import com.mercadolivre.desafioquality.dto.RoomListDTO;
+import com.mercadolivre.desafioquality.entity.Room;
+import com.mercadolivre.desafioquality.service.PropertyService;
+import com.mercadolivre.desafioquality.util.PropertyCreator;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

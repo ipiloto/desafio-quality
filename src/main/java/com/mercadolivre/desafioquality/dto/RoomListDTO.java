@@ -1,6 +1,6 @@
-package com.mercadolivre.desafiotesting.dto;
+package com.mercadolivre.desafioquality.dto;
 
-import com.mercadolivre.desafiotesting.entity.Room;
+import com.mercadolivre.desafioquality.entity.Room;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

@@ -17,4 +17,4 @@ Todos os endpoints necessários para a população de dados e testes dos requisi
 
 https://www.getpostman.com/collections/183b3141796e1aad5c6b
 
-As requisições deste desafio em específico estão contidos na pasta "Desafio Testing"
+As requisições deste desafio em específico estão contidos na pasta "Desafio Quality"
